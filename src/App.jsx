@@ -29,7 +29,7 @@ const App = () => {
     <div
       className={`${
         darkMode && "dark"
-      } w-[100%] h-screen flex flex-col items-center bg-slate-50 gap-3 dark:bg-slate-800`}
+      } w-[100%] h-auto flex flex-col items-center bg-slate-50 gap-3 dark:bg-slate-800`}
     >
       <Header />
       <div className="w-[100%] lg:w-[1000px] flex-1 flex gap-3 ">
