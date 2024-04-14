@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useRef } from "react";
-import { API_BASE_URL, API_KEY } from "../../../config";
+import { API_BASE_URL, API_KEY } from "../../../config.js";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { useDispatch, useSelector } from "react-redux";
 import { Posts } from "../../reduxStore";

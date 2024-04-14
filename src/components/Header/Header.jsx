@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Thumbnail from "../../assets/Thumbnail.png";
 import MagnifyingGlass from "../../assets/MagnifyingGlass.png";
 import axios from "axios";
-import { API_BASE_URL, API_KEY } from "../../../config";
+import { API_BASE_URL, API_KEY } from "../../../config.js";
 import { useDispatch } from "react-redux";
 import { QueriedPosts } from "../../reduxStore";
 import Switch from "../Switch/Switch";
