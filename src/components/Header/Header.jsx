@@ -56,6 +56,7 @@ const Header = () => {
             type="text"
             className="w-full h-full rounded-full bg-slate-100 outline-none p-3 text-lg font-medium"
             onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search"
           />
         </div>
         <Switch />

@@ -40,19 +40,22 @@ const Feed = () => {
     >
       <div className={`w-full relative h-[${virtualizer.getTotalSize()}px]`}>
         <div
-          className={`w-full absolute top-0 left-0 translate-y-[${items.start}px] flex flex-col gap-3`}
+          className={`w-full absolute top-0 left-0 translate-y-[${items.start}px] flex flex-col gap-3 items-center`}
         >
           {items.length != 0 ? (
             items.map((item, index) => (
-              <Post
-                key={index}
-                index={index}
-                size={virtualizer.measureElement}
-                attachments={feedPosts.data[item.index]["attachments"]}
-                author={feedPosts.data[item.index]["author"]}
-                id={feedPosts.data[item.index]["id"]}
-                text={feedPosts.data[item.index]["text"]}
-              />
+              <>
+                <Post
+                  key={index}
+                  index={index}
+                  size={virtualizer.measureElement}
+                  attachments={feedPosts.data[item.index]["attachments"]}
+                  author={feedPosts.data[item.index]["author"]}
+                  id={feedPosts.data[item.index]["id"]}
+                  text={feedPosts.data[item.index]["text"]}
+                />
+                <div className="w-[95%] border-b-[1px] dark:border-slate-900"></div>
+              </>
             ))
           ) : (
             <div className="w-full h-[500px] flex items-center justify-center">
