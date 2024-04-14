@@ -1,11 +1,10 @@
-import Feed from "./components/Feed/Feed";
 import Header from "./components/Header/Header";
 import People from "./components/People/People";
 import Profile from "./components/Profile/Profile";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import axios from "axios";
-import { API_BASE_URL, API_KEY } from "../config";
+import { API_BASE_URL, API_KEY } from "../config.js";
 import { Users } from "../src/reduxStore/index";
 import { Outlet } from "react-router-dom";
 const App = () => {
