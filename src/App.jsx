@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import { API_BASE_URL, API_KEY } from "../config";
 import { Users } from "../src/reduxStore/index";
+import { Outlet } from "react-router-dom";
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -25,7 +26,7 @@ const App = () => {
       <Header />
       <div className="w-[100%] lg:w-[1000px] flex-1 flex gap-3">
         <Profile />
-        <Feed />
+        <Outlet />
         <People />
       </div>
     </div>
