@@ -10,15 +10,15 @@ import ExpandedPost from "./components/Feed/ExpandedPost.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/RigiAssignment",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/RigiAssignment",
         element: <Feed />,
       },
       {
-        path: "/post/:id",
+        path: "/RigiAssignment/post/:id",
         element: <ExpandedPost />,
       },
     ],
