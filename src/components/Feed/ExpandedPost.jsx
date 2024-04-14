@@ -10,7 +10,7 @@ const ExpandedPost = () => {
   const posts = useSelector((store) => store.Posts);
   const post = posts.data.filter((obj) => obj.id == id)[0];
   return (
-    <div className="flex-[2] h-auto bg-white rounded-xl border-[1px] border-gray-200 p-5 overflow-y-auto flex flex-col items-center">
+    <div className="flex-[2] h-auto rounded-xl border-[1px] border-gray-200 p-5 overflow-y-auto flex flex-col items-center dark:bg-slate-900 dark:text-slate-300 ">
       {/* header */}
       <div className="w-full flex items-center gap-3">
         <div className="w-[40px] h-[40px]">

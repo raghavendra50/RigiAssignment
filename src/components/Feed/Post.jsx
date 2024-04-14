@@ -1,11 +1,10 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Post = ({ index, size, attachments, author, id, text }) => {
   const navigate = useNavigate();
   return (
     <div
-      className="w-full h-max flex flex-col gap-3 bg-transparent p-5 hover:bg-slate-100 rounded-lg hover:shadow-md"
+      className="w-full h-max flex flex-col gap-3 bg-transparent p-5 hover:bg-slate-100 rounded-lg hover:shadow-md dark:hover:bg-slate-900 dark:text-slate-900 dark:hover:text-slate-300"
       ref={size}
       data-index={index}
       onClick={() => navigate(`/post/${id}`)}
